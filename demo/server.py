@@ -26,14 +26,14 @@ app.add_middleware(
     expose_headers=["*"],
 )
 
-# add_routes(
-#     app,
-#     ChatOpenAI(),
-#     path="/openai",
-# )
-
 model = ChatOpenAI(api_key=OPENAI_API_KEY)
-prompt = ChatPromptTemplate.from_template("You are a expert in Solana")
+prompt = ChatPromptTemplate.from_template("""
+You are a expert in Solana. Answer the question
+                                          
+Question: {question}
+"""
+)
+
 add_routes(
     app,
     prompt | model,

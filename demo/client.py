@@ -28,11 +28,9 @@ import json
 
 def invoke():
     chat = RemoteRunnable("http://localhost:8000/chat/")
-    # openai.invoke({"topic": "what is solana"})
-    result = chat.invoke({"topic": "what is solana"})
-    # print(result['output'])
-    print(json.dumps(result))
-
+    
+    result = chat.invoke({"question": "what is solana"})
+    print(result.content)
 
 
 if __name__ == "__main__":
