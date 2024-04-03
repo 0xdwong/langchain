@@ -1,0 +1,13 @@
+{
+  "name": "js-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/community": "^0.0.44",
+    "@langchain/openai": "^0.0.25",
+    "apache-arrow": "^15.0.2",
+    "chromadb": "^1.8.1",
+    "vectordb": "^0.4.15"
+  }
+}
