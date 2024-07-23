@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@langchain/anthropic": "^0.2.6",
     "@langchain/community": "^0.0.44",
     "@langchain/openai": "^0.0.25",
     "apache-arrow": "^15.0.2",
